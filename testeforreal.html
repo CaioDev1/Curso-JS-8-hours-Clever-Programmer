@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROVA 8 HOURS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="testeforreal.css">
+</head>
+<body>
+    <div class="container-1">
+        <h1>DESAFIO 1: SUA IDADE EM DIAS</h1>
+        <div class="botao-container-1">
+            <button onclick="idadeEmDias()" class="btn-lg btn-primary" id="clicar-container-1">CLICAR</button>
+            <button onclick="resetar()" class="btn-lg btn-danger" id="resetar-container-1">RESETAR</button>
+        </div>
+    </div>
+    <div class="container-2">
+        <h1>DESAFIO 2: ADICIONAR FOTO DO NEGO NEY</h1>
+        <div class="botao-add-imagem">
+            <button onclick="addImagem()" class="btn-lg btn-success mr2">Adicionar foto</button>
+        </div>
+        <div class="imagens"></div>
+    </div>
+    <div class="container-3">
+        <h1>DESAFIO 3: PEDRA / PAPEL / TESOURA - GAME</h1>
+        <div class="ppt-opcoes">
+            <img src="https://cdn.clipart.email/5bbe141b88494093fa65179df1abf2cc_rock-clip-art-free-clipart-panda-free-clipart-images_2400-2171.png" alt="" style="width: 100px; height: 100px; margin: 30px;" onclick="ppt('pedra')" class="imagemppt">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Paper-notes.svg/1200px-Paper-notes.svg.png" alt="" style="width: 100px; height: 100px; margin: 30px;" onclick="ppt('papel')" class="imagemppt">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Scissors_icon_black.svg/1280px-Scissors_icon_black.svg.png" alt="" style="width: 100px; height: 100px; margin: 30px;" onclick="ppt('tesoura')" class="imagemppt">
+        </div>
+    </div>
+    <div class="container-4">
+        <h1>DESAFIO 4: MUDAR COR DOS BOTÕES</h1>
+        <div class="inputs-container-4">
+            <form action="">
+                <select name="" id="" onchange="mudaCor(this)"> 
+                    <option value="random" selected>Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+                
+                <button class="btn btn-primary">IBURA</button>
+                <button class="btn btn-success">PEIXINHOS</button>
+                <button class="btn btn-warning">MARANGUAPE</button>
+                <button class="btn btn-danger">IPSEP</button>
+            </form>
+        </div>
+    </div>
+    <div class="container-5">
+        <div class="cabecalho">
+            <h1>DESAFIO 5: BLACKJACK</h1>
+            <h3 class="legenda-cabecalho">Vamos jogar</h3>
+        </div>
+        <div class="tabuleiro">
+            <div class="tabuleiro-jogador">
+                <h3>Você: <span id="placar-titulo-jogador">0</span></h3>
+            </div>
+            <div class="tabuleiro-computador">
+                <h3>Computador: <span id="placar-titulo-computador">0</span></h3>
+            </div>
+        </div>
+        <div class="menu">
+            <button class="btn-lg btn-primary mr2" id="botao-hit">Hit</button>
+            <button class="btn-lg btn-warning mr2" id="botao-passar">Passar</button>
+            <button class="btn-lg btn-danger mr2" id="botao-finalizar">Finalizar</button>
+        </div>
+        <div class="resultado">
+            <table>
+                <tr><th>Vitórias</th> <th>Derrotas</th> <th>Empates</th></tr>
+                <tr><td class="vitorias">0</td> <td class="derrotas">0</td> <td class="empates">0</td></tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        Made by Caiozito - CuscuzComCharqueProductions&copy;
+    </footer>
+    
+    <script src="testeforreal.js"></script>
+</body>
+</html>
